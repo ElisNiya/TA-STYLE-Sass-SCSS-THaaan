@@ -1,0 +1,276 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a{
+    padding-right: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+i{
+    padding-right: 15px;
+}
+
+body {
+    font-family: "Archivo", sans-serif;
+  }
+
+/*flex*/
+.flex{
+    display: flex;
+}
+.space-between{
+    display:flex;
+    justify-content: space-between;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.column{
+    flex-direction: column;
+}
+
+.col-25 {
+    flex: 0 1 25%;
+    border: 1px solid silver;
+    border-radius: 5px;
+    padding: 30px 15px;
+    margin:10px ;
+}
+.col-48{
+    flex:0 1 48%;
+}
+.absolute {
+    position: absolute;
+    top:500px;
+    left:150px;
+    z-index: 10;
+}
+
+.wrap {
+    flex-wrap: wrap;  
+}
+.margin {
+    margin-top: 26px;
+}
+
+.hero-info h1{
+    font-size: 52px;
+    font-weight: 900;
+}
+.hero-info p{
+    font-size:  24px;
+    padding: 20px 0;
+
+}
+.hero-img {
+    position: relative;
+    background-image: url(assets/media/banner-1.jpg);
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+/*header*/
+.container {
+    max-width: 1380px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+.padding{
+    padding:40px 30px;
+
+}
+
+.btn {
+    background-color: rgb(175, 53, 53);
+    color: white;
+    border-radius: 50px;
+    padding: 10px 20px;;
+    font-size: 16px;
+    border: none
+}
+
+.btn-secondary{
+    color:rgb(175, 53, 53);
+    background-color: white;
+    border: 1px solid rgb(175, 53, 53)
+}
+
+.social {
+    background-color: rgb(175, 53, 53);
+    color:white;
+    padding:20px;
+    font-size: 20px;
+}
+.social-icons a {
+    color: white;
+}
+
+.main-contact{
+display: grid;
+gap:20px;
+grid-template-columns: repeat(4, 1fr);
+place-items: center;
+}
+
+.nav {
+    background-color: silver;
+}
+.navbar a{
+    color: black;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.navbar a:hover{
+    background-color: rgb(175, 53, 53);
+    color: white;
+}
+.logo {
+    font-size: 36px;
+    color:rgb(175, 53, 53);
+    font-weight: 700;
+    vertical-align: middle;
+    padding-top: 10px;
+
+}
+.logo span{
+    color: black;
+}
+
+.heading{
+    margin: 70px 0;
+}
+h3{
+font-size: 56px;
+font-weight: bold;
+}
+
+p {
+    color:rgb(141, 141, 141);
+    font-size: 16px;
+    padding: 20px 0;
+    line-height: 1.5;
+}
+
+.col-25 h5{
+    font-size: 24px;
+}
+.col-25 p{
+    padding:20px 0;
+}
+
+.col-25 img {
+    width:50px;
+}
+
+h2 {
+    font-size: 46px;
+}
+h4{
+
+    font-size: 36px;
+    font-weight: 900;
+}
+
+img{
+
+    width: 100%;
+}
+
+.pin {
+    background-color: rgb(175, 53, 53);
+    color: white;
+    font-size: 24px;
+    padding: 60px 200px;
+}
+.pin p{
+    color: white;
+}
+
+.clients {
+    background-color: rgb(230, 230, 230);
+    margin-top: 40px;
+}
+.clients img {
+    width: 10%;
+    margin: 20px 30px;
+}
+.social-info a{
+    color: #000;
+}
+
+.contact li, .quick-links li,.links li{
+    padding: 10px 0;
+    vertical-align: middle;  
+}
+.footer {
+    background-color: silver;
+    color: black;
+    padding: 40px 0;
+    
+}
+.main-contact {
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-around;
+}
+
+h5{
+    font-weight: 900;
+    font-size: 24px;
+    margin: 15px 0;
+}
+.contact li a, .quick-links li a,.links li a{
+    color: black
+
+}
